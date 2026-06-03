@@ -1,1 +1,1 @@
-# intellmeet_ai_vc_summary_meetings
+# intellmeet
