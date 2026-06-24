@@ -1,17 +1,21 @@
 import { Navigate } from 'react-router-dom'
+import type { ReactNode } from 'react'
+
+type ProtectedRouteProps = {
+  children: ReactNode
+}
 
 export default function ProtectedRoute({
   children,
-}: {
-  children: JSX.Element
-}) {
+}: ProtectedRouteProps) {
   const user = JSON.parse(
-    localStorage.getItem('userInfo') || 'null'
+    localStorage.getItem('userInfo') ||
+      'null'
   )
 
   if (!user) {
     return <Navigate to="/login" />
   }
 
-  return children
+  return <>{children}</>
 }
