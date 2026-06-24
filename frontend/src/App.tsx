@@ -11,8 +11,10 @@ import Meeting from './pages/Meeting'
 import CreateMeeting from './pages/CreateMeeting'
 import MeetingDetails from './pages/MeetingDetails'
 import EditMeeting from './pages/EditMeeting'
-import ProtectedRoute from './components/ProtectedRoute'
 import Chat from './pages/Chat'
+import VideoRoom from './pages/VideoRoom'
+
+import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
   return (
@@ -46,14 +48,14 @@ function App() {
           }
         />
 
-          <Route
-  path="/chat"
-  element={
-    <ProtectedRoute>
-      <Chat />
-    </ProtectedRoute>
-  }
-/>
+        <Route
+          path="/chat/:id"
+          element={
+            <ProtectedRoute>
+              <Chat />
+            </ProtectedRoute>
+          }
+        />
 
         <Route
           path="/create-meeting"
@@ -65,13 +67,22 @@ function App() {
         />
 
         <Route
-  path="/edit-meeting/:id"
-  element={
-    <ProtectedRoute>
-      <EditMeeting />
-    </ProtectedRoute>
-  }
-/>
+          path="/edit-meeting/:id"
+          element={
+            <ProtectedRoute>
+              <EditMeeting />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/video/:id"
+          element={
+            <ProtectedRoute>
+              <VideoRoom />
+            </ProtectedRoute>
+          }
+        />
 
         <Route
           path="/meeting/:id"

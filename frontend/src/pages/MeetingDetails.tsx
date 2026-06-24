@@ -54,16 +54,46 @@ export default function MeetingDetails() {
     >
       <h1>{meeting.title}</h1>
 
-      <button
-        className="create-btn"
-        onClick={() =>
-          navigate(
-            `/edit-meeting/${meeting._id}`
-          )
-        }
-      >
-        Edit Meeting
-      </button>
+      <div
+  style={{
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '20px',
+  }}
+>
+  <button
+    className="create-btn"
+    onClick={() =>
+      navigate(
+        `/edit-meeting/${meeting._id}`
+      )
+    }
+  >
+    Edit Meeting
+  </button>
+
+  <button
+    className="create-btn"
+    onClick={() =>
+      navigate(
+        `/chat/${meeting._id}`
+      )
+    }
+  >
+    Open Chat
+  </button>
+
+  <button
+    className="create-btn"
+    onClick={() =>
+      navigate(
+        `/video/${meeting._id}`
+      )
+    }
+  >
+    Join Video Call
+  </button>
+</div>
 
       <h2>Description</h2>
       <p>{meeting.description}</p>
