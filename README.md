@@ -176,23 +176,28 @@ GET /api/messages/:meetingId
 
 ### Login Page
 
-(Add Screenshot)
+<img width="1902" height="907" alt="image" src="https://github.com/user-attachments/assets/198db6b1-34b8-4820-9e8d-b68f7179d26e" />
+
 
 ### Dashboard
 
-(Add Screenshot)
+<img width="1877" height="905" alt="image" src="https://github.com/user-attachments/assets/62f673a2-435d-4d1c-9158-4b0cf955b472" />
+
 
 ### Create Meeting
 
-(Add Screenshot)
+<img width="1902" height="906" alt="image" src="https://github.com/user-attachments/assets/389197e1-742d-4c65-a1f1-c6e1d76bbfca" />
+
 
 ### Meeting Details
 
-(Add Screenshot)
+<img width="1898" height="908" alt="image" src="https://github.com/user-attachments/assets/fbd6866b-a54e-4aa4-a29e-b2a01c0d4971" />
+
 
 ### Chat Room
 
-(Add Screenshot)
+<img width="1905" height="905" alt="image" src="https://github.com/user-attachments/assets/d5a17656-a5f2-4d1f-9044-61c79674dbc4" />
+
 
 ---
 
