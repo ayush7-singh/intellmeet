@@ -60,7 +60,7 @@ export default function Dashboard() {
         }
 
         const { data } = await axios.get(
-          'http://localhost:5000/api/auth/profile',
+          'https://intellmeet-backend-kzpi.onrender.com/api/auth/profile',
           config
         )
 
@@ -84,7 +84,7 @@ export default function Dashboard() {
         }
 
         const { data } = await axios.get(
-          'http://localhost:5000/api/meetings',
+          'https://intellmeet-backend-kzpi.onrender.com/api/meetings',
           config
         )
 
