@@ -29,7 +29,7 @@ export default function Login() {
       setErrorMessage('')
 
       const { data } = await axios.post(
-        'http://localhost:5000/api/auth/login',
+        'https://intellmeet-backend-kzpi.onrender.com/api/auth/login',
         {
           email,
           password,

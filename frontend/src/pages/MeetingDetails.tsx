@@ -28,7 +28,7 @@ export default function MeetingDetails() {
         }
 
         const { data } = await axios.get(
-          `http://localhost:5000/api/meetings/${id}`,
+          `https://intellmeet-backend-kzpi.onrender.com/api/meetings/${id}`,
           config
         )
 

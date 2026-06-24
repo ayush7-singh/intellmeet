@@ -29,7 +29,7 @@ export default function EditMeeting() {
         }
 
         const { data } = await axios.get(
-          `http://localhost:5000/api/meetings/${id}`,
+          `https://intellmeet-backend-kzpi.onrender.com/api/meetings/${id}`,
           config
         )
 
@@ -61,7 +61,7 @@ export default function EditMeeting() {
       }
 
       await axios.put(
-        `http://localhost:5000/api/meetings/${id}`,
+        `https://intellmeet-backend-kzpi.onrender.com/api/meetings/${id}`,
         {
           title,
           description,

@@ -20,7 +20,7 @@ export default function CreateMeeting() {
       )
 
       await axios.post(
-        'http://localhost:5000/api/meetings',
+        'https://intellmeet-backend-kzpi.onrender.com/api/meetings',
         {
           title,
           description,

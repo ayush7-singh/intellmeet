@@ -27,7 +27,7 @@ export default function Chat() {
       try {
         const { data } =
           await axios.get(
-            `http://localhost:5000/api/messages/${id}`
+            `https://intellmeet-backend-kzpi.onrender.com/api/messages/${id}`
           )
 
         setMessages(data)
@@ -73,7 +73,7 @@ export default function Chat() {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/messages',
+        'https://intellmeet-backend-kzpi.onrender.com/api/messages',
         newMessage
       )
 
